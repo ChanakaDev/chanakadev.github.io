@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Projects | Dr. Julian Vane</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-primary-fixed": "#131b2e",
+                      "on-secondary-container": "#57657b",
+                      "outline": "#76777d",
+                      "on-secondary-fixed": "#0d1c2f",
+                      "on-tertiary-fixed-variant": "#38485d",
+                      "surface-container-lowest": "#ffffff",
+                      "secondary-container": "#d5e3fd",
+                      "on-surface": "#191c1e",
+                      "on-secondary-fixed-variant": "#3a485c",
+                      "primary-fixed-dim": "#bec6e0",
+                      "tertiary-fixed-dim": "#b7c8e1",
+                      "background": "#f7f9fb",
+                      "error-container": "#ffdad6",
+                      "surface-bright": "#f7f9fb",
+                      "tertiary-fixed": "#d3e4fe",
+                      "tertiary-container": "#0b1c30",
+                      "surface-container-low": "#f2f4f6",
+                      "tertiary": "#000000",
+                      "secondary-fixed": "#d5e3fd",
+                      "on-primary-fixed-variant": "#3f465c",
+                      "on-error-container": "#93000a",
+                      "on-surface-variant": "#45464d",
+                      "surface-container-high": "#e6e8ea",
+                      "surface": "#f7f9fb",
+                      "on-primary-container": "#7c839b",
+                      "primary": "#000000",
+                      "inverse-on-surface": "#eff1f3",
+                      "on-secondary": "#ffffff",
+                      "on-tertiary-container": "#75859d",
+                      "on-tertiary-fixed": "#0b1c30",
+                      "inverse-surface": "#2d3133",
+                      "on-error": "#ffffff",
+                      "surface-container-highest": "#e0e3e5",
+                      "secondary-fixed-dim": "#b9c7e0",
+                      "primary-container": "#131b2e",
+                      "surface-container": "#eceef0",
+                      "error": "#ba1a1a",
+                      "secondary": "#515f74",
+                      "surface-tint": "#565e74",
+                      "inverse-primary": "#bec6e0",
+                      "outline-variant": "#c6c6cd",
+                      "on-primary": "#ffffff",
+                      "surface-variant": "#e0e3e5",
+                      "surface-dim": "#d8dadc",
+                      "on-tertiary": "#ffffff",
+                      "on-background": "#191c1e",
+                      "primary-fixed": "#dae2fd"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "unit": "4px",
+                      "container-max": "1140px",
+                      "gutter": "24px",
+                      "stack-sm": "8px",
+                      "stack-lg": "48px",
+                      "margin-mobile": "16px",
+                      "stack-md": "24px",
+                      "section-padding": "80px"
+              },
+              "fontFamily": {
+                      "headline-lg": ["Newsreader"],
+                      "body-md": ["Manrope"],
+                      "body-lg": ["Manrope"],
+                      "label-caps": ["Manrope"],
+                      "headline-md": ["Newsreader"],
+                      "headline-xl": ["Newsreader"]
+              },
+              "fontSize": {
+                      "headline-lg": ["32px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "500"}],
+                      "body-md": ["16px", {"lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400"}],
+                      "body-lg": ["18px", {"lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400"}],
+                      "label-caps": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "700"}],
+                      "headline-md": ["24px", {"lineHeight": "1.3", "letterSpacing": "0", "fontWeight": "500"}],
+                      "headline-xl": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600"}]
+              }
+            },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 border-b border-slate-200 dark:border-slate-800 bg-white/90 dark:bg-slate-950/90 backdrop-blur-md">
+<nav class="max-w-[1140px] mx-auto px-6 h-16 flex items-center justify-between font-['Newsreader'] tracking-tight">
+<a class="text-xl font-semibold text-slate-900 dark:text-slate-50" href="#">Dr. Julian Vane</a>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors duration-200 ease-in-out cursor-pointer" href="#">About</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors duration-200 ease-in-out cursor-pointer" href="#">Publications</a>
+<a class="text-slate-900 dark:text-slate-50 border-b-2 border-slate-900 dark:border-slate-50 pb-1 ease-in-out cursor-pointer" href="#">Projects</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors duration-200 ease-in-out cursor-pointer" href="#">Contact</a>
+</div>
+<button class="bg-primary text-on-primary px-5 py-2 text-sm font-label-caps rounded-lg hover:opacity-90 transition-opacity">
+                Download CV
+            </button>
+</nav>
+</header>
+<main class="pt-32 pb-20">
+<div class="max-w-[1140px] mx-auto px-6">
+<!-- Hero Section -->
+<section class="mb-16">
+<h1 class="font-headline-xl text-headline-xl text-on-background mb-4">Research Projects</h1>
+<p class="font-body-lg text-body-lg text-secondary max-w-2xl">
+                    Exploring the intersection of computational intelligence and biological systems through rigorous empirical analysis and architectural design.
+                </p>
+</section>
+<!-- Filters/Tags Navigation -->
+<div class="flex flex-wrap gap-3 mb-12 items-center">
+<span class="font-label-caps text-label-caps text-secondary mr-2">FILTER BY:</span>
+<button class="bg-primary text-on-primary px-4 py-1.5 rounded-full text-xs font-label-caps">All Projects</button>
+<button class="bg-surface-container text-secondary px-4 py-1.5 rounded-full text-xs font-label-caps hover:bg-surface-container-high transition-colors">AI</button>
+<button class="bg-surface-container text-secondary px-4 py-1.5 rounded-full text-xs font-label-caps hover:bg-surface-container-high transition-colors">Bioinformatics</button>
+<button class="bg-surface-container text-secondary px-4 py-1.5 rounded-full text-xs font-label-caps hover:bg-surface-container-high transition-colors">Python</button>
+<button class="bg-surface-container text-secondary px-4 py-1.5 rounded-full text-xs font-label-caps hover:bg-surface-container-high transition-colors">Data Visualization</button>
+</div>
+<!-- Projects Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Project Card 1 -->
+<article class="group bg-surface-container-lowest border border-outline-variant rounded-lg overflow-hidden flex flex-col hover:shadow-[0px_4px_20px_rgba(15,23,42,0.05)] transition-all duration-300">
+<div class="aspect-video overflow-hidden">
+<img alt="AI Research Visualization" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Abstract microscopic view of neural network connections with glowing neon blue nodes on a dark scientific background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvLcVfJIx0zW5qTMy2d0hmuDZtmlxwInZNtG2Y1Jk3sSLYWt9jbZ7UafcJoJiEAVy35f0CD-DQzBryUB2MvIG9XspRIBRi-Xocu_J9bBsAVbu_2Y7M1UZn46d8UVDpZtkeEAbd8jjZfjaSmdkoXVK_Wr-IlH8hFjvnOHkVUb9gqqc7f4GEM8gdp0CukJOU2-_5l_IPHjcD9q6OwShB5UXaaihW_ubtSTXzRbSyhXhVRAEWpwtedrIA2s2xglBkoBhodhM_5fBHIkA"/>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<div class="flex gap-2 mb-4">
+<span class="bg-[#F1F5F9] text-secondary text-[10px] font-label-caps px-2 py-0.5 rounded-full">AI</span>
+<span class="bg-[#F1F5F9] text-secondary text-[10px] font-label-caps px-2 py-0.5 rounded-full">Python</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-background mb-2 group-hover:text-primary transition-colors">Neural Synapse Mapping</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">
+                            A deep learning framework designed to map synaptic connectivity in real-time using high-resolution electron microscopy data.
+                        </p>
+<a class="inline-flex items-center text-sm font-label-caps text-primary group-hover:underline underline-offset-4" href="#">
+                            VIEW CASE STUDY
+                            <span class="material-symbols-outlined text-sm ml-1" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Project Card 2 -->
+<article class="group bg-surface-container-lowest border border-outline-variant rounded-lg overflow-hidden flex flex-col hover:shadow-[0px_4px_20px_rgba(15,23,42,0.05)] transition-all duration-300">
+<div class="aspect-video overflow-hidden">
+<img alt="Bioinformatics Sequence" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Macro photography of DNA helical structures represented as elegant translucent glass sculptures with soft laboratory lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBY5s3ZWgCFJnROGjo65eUEhY9-yPo2RQbwWkhfSqGLbJ-DcQXovxpnBEfOFCQIcKm4AHxW9RLd7bxAVlNJ1KV5zvWpDAkBkvZ4b_tppz-tLly0t0h0V74BVAIaClOGVLn3qHivn4Olb7GK4MgIrXsQJ8MyVT_TsDuh6VEhY-wq6yr0TKZmcXBbqwsXAQc0WjKX7cpwlXv_wz9j2_0CVTpRrtMhcDbCZ6ZkeYkDC1BhQ9kVrdZ9_0GfFqDQ0gy1oCaRiMh3dblti30"/>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<div class="flex gap-2 mb-4">
+<span class="bg-[#F1F5F9] text-secondary text-[10px] font-label-caps px-2 py-0.5 rounded-full">Bioinformatics</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-background mb-2 group-hover:text-primary transition-colors">Genome Horizon</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">
+                            An open-source library for scalable genomic sequence alignment leveraging distributed computing architectures.
+                        </p>
+<a class="inline-flex items-center text-sm font-label-caps text-primary group-hover:underline underline-offset-4" href="#">
+                            EXPLORE REPO
+                            <span class="material-symbols-outlined text-sm ml-1" data-icon="terminal">terminal</span>
+</a>
+</div>
+</article>
+<!-- Project Card 3 -->
+<article class="group bg-surface-container-lowest border border-outline-variant rounded-lg overflow-hidden flex flex-col hover:shadow-[0px_4px_20px_rgba(15,23,42,0.05)] transition-all duration-300">
+<div class="aspect-video overflow-hidden">
+<img alt="Data Visualization" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Sophisticated minimalist data dashboard with clean white lines and subtle gray charts on a soft off-white surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8S1DZNrQjqDwmp2z0Oh46IHnOodR0AA1fWNEtP_pvbJXbxiY0BJd5cXynsHf75bA-2g0rXkOixUFjrlWjgHNmO4bSp1OM9zpzd5jgjYUZHja-wM8J2pEg2Wp7E6YaL0ILkiBaIkC8GVW2bOrcS1PcattIAidZfzHbs872o4LbUf987LfHYwwr6Lu9a-7NtAEPQ9kVTLTe3c5H5OjeDBqy4ZQNTHzU3bwSwnSfM0aiJRYyrfVZz1qyqyeeEq9xH_5eMvBf1hlA7JY"/>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<div class="flex gap-2 mb-4">
+<span class="bg-[#F1F5F9] text-secondary text-[10px] font-label-caps px-2 py-0.5 rounded-full">Python</span>
+<span class="bg-[#F1F5F9] text-secondary text-[10px] font-label-caps px-2 py-0.5 rounded-full">Visualization</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-background mb-2 group-hover:text-primary transition-colors">Quantify.ai Dashboard</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">
+                            A visualization toolset that translates complex longitudinal clinical trial data into actionable researcher insights.
+                        </p>
+<a class="inline-flex items-center text-sm font-label-caps text-primary group-hover:underline underline-offset-4" href="#">
+                            LIVE DEMO
+                            <span class="material-symbols-outlined text-sm ml-1" data-icon="open_in_new">open_in_new</span>
+</a>
+</div>
+</article>
+<!-- Project Card 4 -->
+<article class="group bg-surface-container-lowest border border-outline-variant rounded-lg overflow-hidden flex flex-col hover:shadow-[0px_4px_20px_rgba(15,23,42,0.05)] transition-all duration-300">
+<div class="aspect-video overflow-hidden">
+<img alt="Cybersecurity Research" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Digital circuit board pattern with pulsing light paths suggesting secure data flow in a high-tech environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-irawBrL83XCAHfS9e3MqOPWmFMSrfkNOW4KouubbC7T-x585ReneU_D9hMmEMCUm9Eq3JpeNoow_c1ve-2ogar5agDPL6uNhsbydRelfl4-1ytLsHLDN2byOov9Ma0cj0L8cWwWgqwu7hL4YcpsFlyFVtqQTf-cIr_EyCYXhP9QRfGvWNXq5WQPez6n8XPLLUi_JLhC8i1XS6_hJYnQISsCNWBMHDBFE4Ycvz7FA81zYHF_1p90xgnRdxqoMAehpDHWzgK8sU6I"/>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<div class="flex gap-2 mb-4">
+<span class="bg-[#F1F5F9] text-secondary text-[10px] font-label-caps px-2 py-0.5 rounded-full">AI</span>
+<span class="bg-[#F1F5F9] text-secondary text-[10px] font-label-caps px-2 py-0.5 rounded-full">Security</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-background mb-2 group-hover:text-primary transition-colors">Anomalous Detection v2</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">
+                            Utilizing unsupervised learning to identify security breaches in biological laboratory information systems.
+                        </p>
+<a class="inline-flex items-center text-sm font-label-caps text-primary group-hover:underline underline-offset-4" href="#">
+                            READ PAPER
+                            <span class="material-symbols-outlined text-sm ml-1" data-icon="description">description</span>
+</a>
+</div>
+</article>
+<!-- Project Card 5 -->
+<article class="group bg-surface-container-lowest border border-outline-variant rounded-lg overflow-hidden flex flex-col hover:shadow-[0px_4px_20px_rgba(15,23,42,0.05)] transition-all duration-300">
+<div class="aspect-video overflow-hidden">
+<img alt="Climate Modeling" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Ethereal abstract representation of atmospheric currents flowing across a globe in shades of blue and silver" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAf34u3LO9mtqW378hbQyhpxC0b4MrjnXVwHRLXMew69_7z9vgPUtHWfPiWrpG5dBvuhHCEyZwU3yR8U12KYQvkCmoaUEqiTY5XDxYROm5mnL3Ql9tLourYAcyMZyWHbkYJGmGdBbwGGPOfBfO1UuGOe8oAEusTrfquvCcTWmAfiy35H_HiiTY0JvnPo0Xm3kQ9cTvGoVoblh4DVmDAAeE5fgt_AgBhf2izKzLkOFSXwFlwLTbe8hcD0h1grqPMGrSF2gjL2KGbif4"/>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<div class="flex gap-2 mb-4">
+<span class="bg-[#F1F5F9] text-secondary text-[10px] font-label-caps px-2 py-0.5 rounded-full">Python</span>
+<span class="bg-[#F1F5F9] text-secondary text-[10px] font-label-caps px-2 py-0.5 rounded-full">Modeling</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-background mb-2 group-hover:text-primary transition-colors">Eco-Sim Engine</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">
+                            High-fidelity simulation of microbial ecosystem responses to fluctuating environmental temperature gradients.
+                        </p>
+<a class="inline-flex items-center text-sm font-label-caps text-primary group-hover:underline underline-offset-4" href="#">
+                            VIEW MODULES
+                            <span class="material-symbols-outlined text-sm ml-1" data-icon="grid_view">grid_view</span>
+</a>
+</div>
+</article>
+<!-- Project Card 6 -->
+<article class="group bg-surface-container-lowest border border-outline-variant rounded-lg overflow-hidden flex flex-col hover:shadow-[0px_4px_20px_rgba(15,23,42,0.05)] transition-all duration-300">
+<div class="aspect-video overflow-hidden">
+<img alt="Molecular Dynamics" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Artistic rendering of molecular spheres interacting in a void, illuminated by sharp studio lighting for scientific clarity" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwwUTwkczOQ9L16ou9kWXCisOhyDD3wuEdAciRAqwlDYYMiJ4DnCS5pXe5FzeTfa9lKkrRH9JUUMLIvzUrJ2aKgCXvz5M0EfZ3SJUPpPgyiN4ZT0jRPD_9wzEHaFQK2Ubf9XJBRvCckhN4bpQLDRMe5gch-W46_kny-KmHdngIS_RJbHb2bcvwCxunt4HAP8Re-ayDSlyfcAyl23bZWqhtrlqIkX4h72Cv0ffXr4KXR3OD43Vh8FYSXzqrudbsw1aUW2cW5PQxrwo"/>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<div class="flex gap-2 mb-4">
+<span class="bg-[#F1F5F9] text-secondary text-[10px] font-label-caps px-2 py-0.5 rounded-full">Bioinformatics</span>
+<span class="bg-[#F1F5F9] text-secondary text-[10px] font-label-caps px-2 py-0.5 rounded-full">AI</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-background mb-2 group-hover:text-primary transition-colors">Protein Fold Prediction</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">
+                            An experimental approach using transformer-based models to predict tertiary protein structures from raw amino acid sequences.
+                        </p>
+<a class="inline-flex items-center text-sm font-label-caps text-primary group-hover:underline underline-offset-4" href="#">
+                            CASE STUDY
+                            <span class="material-symbols-outlined text-sm ml-1" data-icon="auto_awesome">auto_awesome</span>
+</a>
+</div>
+</article>
+</div>
+<!-- Collaboration CTA -->
+<section class="mt-24 py-16 px-8 border-t border-slate-200 dark:border-slate-800 text-center">
+<h2 class="font-headline-lg text-headline-lg mb-4">Interested in collaboration?</h2>
+<p class="font-body-md text-on-surface-variant max-w-lg mx-auto mb-8">
+                    I am always open to discussing new research opportunities, grant applications, or technical consultations in computational biology.
+                </p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<button class="bg-primary text-on-primary px-8 py-3 rounded-lg font-label-caps hover:opacity-90 transition-opacity">
+                        SEND AN INQUIRY
+                    </button>
+<button class="bg-transparent border border-secondary text-secondary px-8 py-3 rounded-lg font-label-caps hover:bg-surface-container transition-colors">
+                        VIEW GITHUB
+                    </button>
+</div>
+</section>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-slate-200 dark:border-slate-800 mt-20 bg-slate-50 dark:bg-slate-900">
+<div class="max-w-[1140px] mx-auto px-6 py-12 flex flex-col md:flex-row justify-between items-center gap-4 font-['Newsreader'] text-sm">
+<div class="flex flex-col gap-1">
+<span class="text-lg font-bold text-slate-900 dark:text-slate-50">Dr. Julian Vane</span>
+<p class="text-slate-500 dark:text-slate-400">© 2024 Julian Vane. Research Scientist.</p>
+</div>
+<div class="flex gap-8">
+<a class="text-slate-500 dark:text-slate-400 hover:underline decoration-slate-400 underline-offset-4 transition-all duration-300" href="#">Google Scholar</a>
+<a class="text-slate-500 dark:text-slate-400 hover:underline decoration-slate-400 underline-offset-4 transition-all duration-300" href="#">ORCID</a>
+<a class="text-slate-500 dark:text-slate-400 hover:underline decoration-slate-400 underline-offset-4 transition-all duration-300" href="#">GitHub</a>
+<a class="text-slate-500 dark:text-slate-400 hover:underline decoration-slate-400 underline-offset-4 transition-all duration-300" href="#">Contact</a>
+</div>
+</div>
+</footer>
+</body></html>
