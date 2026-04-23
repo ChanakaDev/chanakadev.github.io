@@ -2,25 +2,25 @@ import { useNavigate } from 'react-router-dom'
 
 const highlights = [
   {
-    badge: 'NATURE 2024',
-    icon: 'open_in_new',
-    title: 'Synaptic Plasticity in Deep Learning Architectures',
-    desc: 'An investigation into the integration of homeostatic scaling mechanisms within recurrent neural networks.',
-    tags: ['NEURAL NETWORKS', 'BIOLOGY'],
+    badge: 'RESEARCH',
+    icon: 'monitor_heart',
+    title: 'CardioAnalyzer',
+    desc: 'AI-powered ECG analysis system for detecting heart disease, enabling accessible cardiac screening through deep learning.',
+    tags: ['AI', 'HEALTHCARE'],
   },
   {
-    badge: 'LECTURE',
-    icon: 'video_library',
-    title: 'Ethics in Computational Genomics',
-    desc: 'Keynote address at the 2023 International Bio-Engineering Symposium in Stockholm.',
-    tags: ['ETHICS', 'GENOMICS'],
+    badge: 'RESEARCH',
+    icon: 'agriculture',
+    title: 'PepperMate',
+    desc: 'Mobile AI application enhancing Ceylon black pepper cultivation through intelligent disease detection and yield prediction.',
+    tags: ['AI', 'MOBILE APP'],
   },
   {
-    badge: 'PROJECT',
-    icon: 'terminal',
-    title: 'NeuroFlow v2.0 Released',
-    desc: 'An open-source library for simulating neural signal transduction in high-throughput datasets.',
-    tags: ['PYTHON', 'OPEN SOURCE'],
+    badge: 'CAREER',
+    icon: 'work',
+    title: 'Senior AI/ML Engineer at Cybergate',
+    desc: 'Developing and deploying machine learning solutions for enterprise-level applications across diverse domains.',
+    tags: ['AI', 'ML ENGINEERING'],
   },
 ]
 
@@ -34,16 +34,17 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
           <div className="md:col-span-7 space-y-stack-md">
             <span className="font-label-caps text-label-caps text-on-secondary-container uppercase">
-              Research Scientist
+              AI / ML Engineer &amp; Researcher
             </span>
             <h1 className="font-headline-xl text-headline-xl text-on-surface">
-              Mapping the convergence of{' '}
-              <span className="italic">Computational Biology</span> and Neural Networks.
+              Grounding the power of{' '}
+              <span className="italic">Machine Learning</span> in problems that matter.
             </h1>
             <p className="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
-              I specialize in developing bio-inspired algorithms to decode complex neural patterns.
-              My work bridges the gap between synthetic intelligence and biological computation to
-              unlock new frontiers in healthcare.
+              I apply machine learning and deep learning to real-world challenges, developing
+              intelligent systems that bridge the gap between cutting-edge AI research and practical,
+              deployable solutions. My focus is on building tools that are not just theoretically
+              sound, but operationally impactful.
             </p>
             <div className="flex gap-4 pt-4">
               <button
@@ -56,7 +57,7 @@ export default function Home() {
                 onClick={() => navigate('/projects')}
                 className="px-6 py-3 border border-secondary text-secondary rounded-lg font-label-caps text-label-caps hover:bg-surface-container transition-colors"
               >
-                Lab Projects
+                My Projects
               </button>
             </div>
           </div>
@@ -64,7 +65,7 @@ export default function Home() {
           <div className="md:col-span-5 relative mt-12 md:mt-0">
             <div className="aspect-[4/5] bg-surface-container-highest overflow-hidden rounded-xl">
               <img
-                alt="Portrait of Dr. Julian Vane"
+                alt="Portrait of Chanaka Bandara"
                 className="w-full h-full object-cover grayscale contrast-110"
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyEkk_iTFddknVoSOhUJEOU7ZfXVo-i_u1xhOE3buja5RZJp--V-LU-JW1neVIAWhYe1rscWiireGTmydCi5Xo8QUiJ6ZydUjzl7Ew19sRFdptLZMmSu9qQBzoLXm7QgIlINSTQLsCcfOMhni5U1pRDqV_sWunLo1y86BA3IvnUaS6bTq8sEXDLwC3VFoV2_W3vTVy60gHKEq3gok2Vf9QL84OM0tBHjlbugXX3NR_zKT6T9tZHi-gT6Zvq9CaY9-HFPq1uXhmBvw"
               />
@@ -73,7 +74,7 @@ export default function Home() {
               <div className="space-y-2">
                 <p className="font-label-caps text-label-caps text-on-secondary-container">CURRENT POSITION</p>
                 <p className="font-headline-md text-headline-md leading-tight">
-                  Principal Investigator<br />at Vane Lab
+                  Senior AI / ML Engineer<br />at Cybergate
                 </p>
               </div>
             </div>
@@ -129,12 +130,12 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Lab section */}
+      {/* Lab / Research section */}
       <section className="py-section-padding max-w-[1140px] mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-stack-lg items-center">
           <div className="relative rounded-xl overflow-hidden aspect-video">
             <img
-              alt="Lab environment"
+              alt="AI research environment"
               className="w-full h-full object-cover brightness-75"
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuCH5q92e9fNFVqQ7FhyGckoGEOyK9S0LL1PTO3Cw4l1MD3bZFiU7Zv9jkAhhp26jiwi3FyCHAq9DTAlS0qQrnUO2ZZi_ZrrzSXRkj-eKHsfCMLnS0iajzdA7jv6MQg7vai_sNi7eNU4WUYnbH1ki-CSyKNI2irQjDFfUmQH305GRacVEE_SvMVvKsc0oTqc4fms-jPTruy5RwRofB2ydNtzytO3pP2eSWAm3o62C50a8wC2spajj07Lzd01RAS2jWP6uViLM8rTY0U"
             />
@@ -146,20 +147,23 @@ export default function Home() {
           </div>
 
           <div className="space-y-stack-md">
-            <h2 className="font-headline-lg text-headline-lg">Bridging Theory &amp; Practice</h2>
+            <h2 className="font-headline-lg text-headline-lg">From Research to Real-World Impact</h2>
             <p className="text-on-surface-variant font-body-lg">
-              My laboratory explores the fundamental principles of neural computation to build
-              systems that learn with the efficiency of biological brains. Through collaborative
-              research, we aim to translate these findings into transformative neurological therapies.
+              Research holds its greatest value not in the pages of a journal, but in the lives it
+              transforms. My work in applied artificial intelligence is driven by a single conviction
+              — that machine learning models should not stop at accuracy metrics, but should go
+              further, solving real problems for real people. From designing intelligent systems to
+              deploying data-driven solutions, I am committed to ensuring that every line of research
+              translates into meaningful, measurable impact.
             </p>
             <div className="grid grid-cols-2 gap-4">
               <div className="p-4 border border-outline-variant rounded-lg">
-                <div className="font-headline-md text-headline-md mb-1">140+</div>
-                <div className="font-label-caps text-[10px] text-secondary">CITATIONS</div>
+                <div className="font-headline-md text-headline-md mb-1">2</div>
+                <div className="font-label-caps text-[10px] text-secondary">PUBLICATIONS</div>
               </div>
               <div className="p-4 border border-outline-variant rounded-lg">
-                <div className="font-headline-md text-headline-md mb-1">12</div>
-                <div className="font-label-caps text-[10px] text-secondary">PATENTS</div>
+                <div className="font-headline-md text-headline-md mb-1">2</div>
+                <div className="font-label-caps text-[10px] text-secondary">RESEARCH PROJECTS</div>
               </div>
             </div>
           </div>

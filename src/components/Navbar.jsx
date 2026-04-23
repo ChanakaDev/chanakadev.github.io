@@ -18,7 +18,7 @@ export default function Navbar() {
     <nav className="fixed top-0 w-full z-50 border-b bg-white/90 backdrop-blur-md border-slate-200">
       <div className="max-w-[1140px] mx-auto px-6 h-16 flex items-center justify-between">
         <NavLink to="/" className="text-xl font-semibold text-slate-900 font-headline-md tracking-tight">
-          Dr. Julian Vane
+          Chanaka Bandara
         </NavLink>
 
         <div className="hidden md:flex items-center gap-8">

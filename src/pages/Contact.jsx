@@ -129,13 +129,13 @@ export default function Contact() {
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent" />
               </div>
               <div className="p-8 space-y-4">
-                <span className="font-label-caps text-label-caps text-secondary uppercase">Institutional Office</span>
+                <span className="font-label-caps text-label-caps text-secondary uppercase">Affiliation</span>
                 <div className="space-y-1">
-                  <p className="font-headline-md text-headline-md text-on-surface">Department of Informatics</p>
+                  <p className="font-headline-md text-headline-md text-on-surface">Department of ICT</p>
                   <p className="font-body-md text-body-md text-on-surface-variant">
-                    The Alan Turing Building, Room 4.02<br />
-                    University of St. Andrews<br />
-                    North St, St Andrews KY16 9AJ, UK
+                    Faculty of Technology<br />
+                    University of Colombo<br />
+                    Homagama, Sri Lanka
                   </p>
                 </div>
               </div>
