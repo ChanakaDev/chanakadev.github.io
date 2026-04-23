@@ -67,7 +67,7 @@ export default function Home() {
               <img
                 alt="Portrait of Chanaka Bandara"
                 className="w-full h-full object-cover grayscale contrast-110"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyEkk_iTFddknVoSOhUJEOU7ZfXVo-i_u1xhOE3buja5RZJp--V-LU-JW1neVIAWhYe1rscWiireGTmydCi5Xo8QUiJ6ZydUjzl7Ew19sRFdptLZMmSu9qQBzoLXm7QgIlINSTQLsCcfOMhni5U1pRDqV_sWunLo1y86BA3IvnUaS6bTq8sEXDLwC3VFoV2_W3vTVy60gHKEq3gok2Vf9QL84OM0tBHjlbugXX3NR_zKT6T9tZHi-gT6Zvq9CaY9-HFPq1uXhmBvw"
+                src="/image.png"
               />
             </div>
             <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-lg border border-outline-variant shadow-sm hidden lg:block">
