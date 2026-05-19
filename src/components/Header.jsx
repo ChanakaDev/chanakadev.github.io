@@ -51,6 +51,15 @@ const socialLinks = [
   { label: 'Email', href: '#', icon: Icons.Email },
 ]
 
+const navLinks = [
+  { label: 'Timeline', href: '#timeline' },
+  { label: 'Talks', href: '#talks' },
+  { label: 'Lecturing', href: '#teaching' },
+  { label: 'Writing', href: '#writing' },
+  { label: 'Projects', href: '#projects' },
+  { label: 'Publications', href: '#publications' },
+]
+
 function useTheme() {
   const [theme, setTheme] = useState(() =>
     typeof document !== 'undefined' && document.documentElement.classList.contains('dark')
@@ -95,24 +104,73 @@ function ThemeToggle({ theme, onToggle }) {
 
 export default function Header() {
   const [theme, toggleTheme] = useTheme()
+  const [menuOpen, setMenuOpen] = useState(false)
+
+  useEffect(() => {
+    if (!menuOpen) return
+    const onKey = (e) => {
+      if (e.key === 'Escape') setMenuOpen(false)
+    }
+    window.addEventListener('keydown', onKey)
+    return () => window.removeEventListener('keydown', onKey)
+  }, [menuOpen])
 
   return (
     <>
       <div className="sticky top-0 z-40 bg-bg/85 backdrop-blur supports-[backdrop-filter]:bg-bg/70 border-b border-hairline">
-        <div className="container-page py-3.5 flex items-center justify-between">
+        <div className="container-page py-3.5 flex items-center justify-between gap-3">
           <a href="#" className="text-small font-semibold text-ink no-underline tracking-tight">
             chanaka.bandara
           </a>
           <nav className="hidden md:flex items-center gap-6 text-small text-sub">
-            <a href="#timeline" className="text-sub no-underline hover:text-ink">Timeline</a>
-            <a href="#talks" className="text-sub no-underline hover:text-ink">Talks</a>
-            <a href="#teaching" className="text-sub no-underline hover:text-ink">Lecturing</a>
-            <a href="#writing" className="text-sub no-underline hover:text-ink">Writing</a>
-            <a href="#projects" className="text-sub no-underline hover:text-ink">Projects</a>
-            <a href="#publications" className="text-sub no-underline hover:text-ink">Publications</a>
+            {navLinks.map((l) => (
+              <a key={l.href} href={l.href} className="text-sub no-underline hover:text-ink">
+                {l.label}
+              </a>
+            ))}
           </nav>
-          <ThemeToggle theme={theme} onToggle={toggleTheme} />
+          <div className="flex items-center gap-2">
+            <ThemeToggle theme={theme} onToggle={toggleTheme} />
+            <button
+              type="button"
+              onClick={() => setMenuOpen((v) => !v)}
+              aria-label={menuOpen ? 'Close menu' : 'Open menu'}
+              aria-expanded={menuOpen}
+              aria-controls="mobile-nav"
+              className="md:hidden inline-flex items-center justify-center w-9 h-9 rounded-full bg-bg border border-hairline text-ink hover:border-hairlineStrong hover:bg-surface transition-colors"
+            >
+              {menuOpen ? (
+                <svg viewBox="0 0 24 24" className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+                  <path d="M18 6 6 18M6 6l12 12" />
+                </svg>
+              ) : (
+                <svg viewBox="0 0 24 24" className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+                  <path d="M3 6h18M3 12h18M3 18h18" />
+                </svg>
+              )}
+            </button>
+          </div>
         </div>
+        {menuOpen && (
+          <nav
+            id="mobile-nav"
+            className="md:hidden border-t border-hairline bg-bg"
+          >
+            <ul className="container-page py-3 flex flex-col">
+              {navLinks.map((l) => (
+                <li key={l.href}>
+                  <a
+                    href={l.href}
+                    onClick={() => setMenuOpen(false)}
+                    className="block py-2.5 text-body text-sub no-underline hover:text-ink"
+                  >
+                    {l.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </nav>
+        )}
       </div>
 
       <header className="border-b border-hairline">

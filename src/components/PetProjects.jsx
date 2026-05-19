@@ -19,18 +19,9 @@ function GitHubIcon() {
 }
 
 function ProjectCard({ p, idx }) {
+  const href = p.link || '#'
   return (
-    <article className="card h-full p-4 flex items-center gap-4 hover:shadow-cardHover hover:border-hairlineStrong transition-all relative">
-      <a
-        href={p.link || '#'}
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label={`${p.title} on GitHub`}
-        title="View on GitHub"
-        className="absolute top-3 right-3 inline-flex w-8 h-8 items-center justify-center rounded-full text-muted no-underline hover:text-ink hover:bg-surface transition-colors"
-      >
-        <GitHubIcon />
-      </a>
+    <article className="card group h-full p-4 flex items-center gap-4 hover:shadow-cardHover hover:border-hairlineStrong transition-all relative">
       <div
         className={`shrink-0 w-24 sm:w-28 aspect-square ${tints[idx % tints.length]} flex items-center justify-center overflow-hidden rounded-lg ring-1 ring-hairline`}
       >
@@ -46,12 +37,27 @@ function ProjectCard({ p, idx }) {
         )}
       </div>
       <div className="min-w-0 flex-1 pr-8">
-        <h3 className="text-h4 font-semibold text-ink mb-1.5">{p.title}</h3>
+        <h3 className="text-h4 font-semibold mb-1.5">
+          <a
+            href={href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-ink no-underline group-hover:text-link group-hover:underline transition-colors before:absolute before:inset-0 before:content-['']"
+          >
+            {p.title}
+          </a>
+        </h3>
         <p
-          className="text-body text-ink/80 leading-[1.7] line-clamp-3"
+          className="text-body text-ink/80 leading-[1.7] line-clamp-3 [&_a]:relative [&_a]:z-10"
           dangerouslySetInnerHTML={{ __html: p.body }}
         />
       </div>
+      <span
+        aria-hidden
+        className="absolute top-3 right-3 inline-flex w-8 h-8 items-center justify-center rounded-full text-muted group-hover:text-ink transition-colors"
+      >
+        <GitHubIcon />
+      </span>
     </article>
   )
 }
