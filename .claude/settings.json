@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install *)",
+      "Bash(npm run *)",
+      "Bash(curl -sSL -o tiny-rag.jpg \"https://picsum.photos/seed/tiny-rag/800/800\")",
+      "Bash(curl -sSL -o paper-radar.jpg \"https://picsum.photos/seed/paper-radar/800/800\")",
+      "Bash(curl -sSL -o agri-vision.jpg \"https://picsum.photos/seed/agri-vision/800/800\")",
+      "Bash(curl -sSL -o llm-lab.jpg \"https://picsum.photos/seed/llm-lab/800/800\")",
+      "Bash(curl -sSL -o eval-kit.jpg \"https://picsum.photos/seed/eval-kit/800/800\")"
+    ]
+  }
+}
